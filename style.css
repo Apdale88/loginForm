@@ -1,0 +1,116 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing:border-box;
+}
+
+body{
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-family: sans-serif;
+    background-color: lightblue;
+    display: flex;
+}
+.container{
+    background-color: #faf9f9;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    width: 500px;
+}
+.container h3{
+    font-size: 30px;
+    margin-left: 40px;
+    margin-top: 60px;
+    font-weight: 600;
+}
+p{
+    font-size: 15px;
+    word-wrap: break-word;
+    padding-bottom: 25px;
+    font-family: sans-serif;
+
+}
+ul {
+    list-style: none;
+  }
+
+  ul li::before{
+      content:  "\2022";
+      color: green;
+      display: inline-block;
+      width: 1em;
+      margin-left: -1em;
+      font-weight: bold;
+      font-size: 20px;
+  }
+  
+
+ul{
+
+    
+    position: relative;
+    display: grid;
+    
+    padding-left:30px ;
+  
+    grid-template-columns: repeat(2,1fr);
+    
+    
+    
+} 
+form{
+    padding: 30px 40px;
+
+}
+
+.form-control{
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+.form-control label{
+    display: block;
+    margin-bottom: 8px;
+    font-weight:550;
+}
+.form-control input{
+    width: 100%;
+    padding: 20px 0px;
+    border: 1px solid #d2d4d4;
+    border-radius: 8px;
+}
+.form-control input:focus{
+    outline: none;
+    border: 1px solid #57c1ff;
+}
+.btn{
+    width: 100%;
+    padding: 20px 25px;
+    border-radius: 10px;
+    background-color: #b98f77;
+    color: #ffff;
+    font-weight: 550;
+    font-size: 15px;
+    border: 2px solid #bd8565;
+    outline: none;
+    cursor: pointer;
+    display: block;
+    margin-bottom: 25px;
+
+}
+@media only screen  and (max-width:900px){
+    .container{
+        width: 100%;
+        
+        
+        
+
+    
+    }
+
+    
+    
+    
+    
+
+}
